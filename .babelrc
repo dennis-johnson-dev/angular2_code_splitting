@@ -1,7 +1,3 @@
 {
-  "presets": ["es2015"],
-  "ignore": [
-    "foo.js",
-    "bar/**/*.js"
-  ]
+  "presets": ["es2015"]
 }
