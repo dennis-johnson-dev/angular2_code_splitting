@@ -14,9 +14,9 @@ import InlineSubComp from './InlineSubComp';
   directives: [ ROUTER_DIRECTIVES ]
 })
 @RouteConfig([
-  { path: '/public', name: 'Root', component: InlineSubComp },
+  { path: '/', name: 'Root', component: InlineSubComp },
   new AsyncRoute({
-    path: '/public/sub',
+    path: '/sub',
     loader: () => System.import('./DynamicSubComp').then((comp: any) => {
       return comp.default;
     }),
