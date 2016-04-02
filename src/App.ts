@@ -6,7 +6,7 @@ import InlineSubComp from './InlineSubComp';
   selector: 'yo',
   template: `
     <div>
-      <h1>Code splitting in Angular 2</h1>
+      <h1>Code Splitting in Angular 2</h1>
       <a [routerLink]="['LoadDynamicSub']">Load Sub Component</a>
       <router-outlet></router-outlet>
     </div>
@@ -23,4 +23,4 @@ import InlineSubComp from './InlineSubComp';
     name: 'LoadDynamicSub'
   })
 ])
-export class App {}
+export default class App {}

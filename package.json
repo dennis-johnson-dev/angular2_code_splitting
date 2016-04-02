@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "angular2": "^2.0.0-beta.13",
+    "bootstrap": "^3.3.6",
     "es6-shim": "^0.35.0",
     "hapi": "^13.3.0",
     "inert": "^3.2.0",

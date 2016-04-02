@@ -1,14 +1,12 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "experimentalDecorators": true,
-      "noImplicitAny": true,
-      "preserveConstEnums": true,
-      "target": "es6"
-    },
-    "exclude": [
-      "node_modules",
-      "typings/main.d.ts",
-      "typings/main"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "typings/main.d.ts",
+    "typings/main"
+  ]
 }

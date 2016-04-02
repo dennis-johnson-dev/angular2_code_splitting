@@ -1,5 +1,5 @@
 {
-  "name": "angularTo",
+  "name": "angular-code-splitting",
   "version": false,
   "dependencies": {},
   "ambientDependencies": {
