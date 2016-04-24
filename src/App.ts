@@ -7,7 +7,9 @@ import InlineSubComp from './InlineSubComp';
   template: `
     <div>
       <h1>Code Splitting in Angular 2</h1>
-      <a [routerLink]="['LoadDynamicSub']">Load Sub Component</a>
+      <div>
+        <a [routerLink]="['LoadDynamicSub']">Load Sub Component</a>
+      </div>
       <router-outlet></router-outlet>
     </div>
   `,

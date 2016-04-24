@@ -17,4 +17,4 @@ Navigate to [http://localhost:3000](http://localhost:3000).
 
 Click "Load Sub Component"
 
-Notice in the network tab in the dev tools that the component is downloaded.
+View the network tab in the dev tools to see that the component has been downloaded.

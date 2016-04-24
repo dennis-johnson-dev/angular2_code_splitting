@@ -24,6 +24,12 @@ server.route({
       redirectToSlash: true,
       index: true
     }
+  },
+  config: {
+    cache: {
+      expiresIn: 60*60*60*1000,
+      statuses: [200]
+    }
   }
 });
 

@@ -4,7 +4,7 @@ module.exports = function() {
   return {
     entry: './src/index',
     output: {
-      filename: 'bundle.js',
+      filename: '[name].js',
       path: path.resolve(__dirname, './public/js'),
       publicPath: '/js/'
     },
