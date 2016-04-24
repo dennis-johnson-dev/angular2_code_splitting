@@ -1,8 +1,0 @@
-{
-  "name": "angular-code-splitting",
-  "version": false,
-  "dependencies": {},
-  "ambientDependencies": {
-    "systemjs": "registry:dt/systemjs#0.18.4+20160316155526"
-  }
-}
