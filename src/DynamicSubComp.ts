@@ -1,5 +1,6 @@
-import { Component } from 'angular2/core';
-import './styles/DynamicSubComp.scss';
+import { Component, NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+require('./styles/DynamicSubComp.scss');
 
 @Component({
   selector: 'dynamic-sub-comp',
@@ -10,4 +11,20 @@ import './styles/DynamicSubComp.scss';
     </div>
   `
 })
-export default class DynamicSubComp {}
+class DynamicSubComp {}
+
+export const routes = [
+  { path: '', component: DynamicSubComp, pathMatch: 'full' }
+];
+
+@NgModule({
+  declarations: [
+    DynamicSubComp
+  ],
+  imports: [
+    RouterModule.forChild(routes)
+  ]
+})
+export default class DynamicModule {
+  static routes = routes;
+}

@@ -1,28 +1,17 @@
-import { Component } from 'angular2/core';
-import { AsyncRoute, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
-import InlineSubComp from './InlineSubComp';
+import { routes, appRoutingProviders } from './Routing';
 
-@Component({
-  selector: 'yo',
-  template: `
-    <div>
-      <h1>Code Splitting in Angular 2</h1>
-      <div>
-        <a [routerLink]="['LoadDynamicSub']">Load Sub Component</a>
-      </div>
-      <router-outlet></router-outlet>
-    </div>
-  `,
-  directives: [ ROUTER_DIRECTIVES ]
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import AppComponent from './AppComponent';
+import DefaultComp from './DefaultComp';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    DefaultComp
+  ],
+  imports: [ BrowserModule, routes ],
+  bootstrap: [ AppComponent ]
 })
-@RouteConfig([
-  { path: '/', name: 'Root', component: InlineSubComp },
-  new AsyncRoute({
-    path: '/sub',
-    loader: () => System.import('./DynamicSubComp').then((comp: any) => {
-      return comp.default;
-    }),
-    name: 'LoadDynamicSub'
-  })
-])
 export default class App {}

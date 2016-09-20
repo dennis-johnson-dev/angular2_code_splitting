@@ -1,8 +1,7 @@
-import { bootstrap } from 'angular2/platform/browser';
-import App from './App';
-import { ROUTER_PROVIDERS } from 'angular2/router';
+import 'reflect-metadata';
+import 'zone.js/dist/zone';
 
-bootstrap(
-  App,
-  [ ROUTER_PROVIDERS ]
-);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import App from './App';
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(App);
