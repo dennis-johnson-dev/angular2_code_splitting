@@ -15,6 +15,6 @@ npm start
 
 Navigate to [http://localhost:3000](http://localhost:3000).
 
-Click "Load Sub Component"
+Click "Load a dynamic component"
 
 View the network tab in the dev tools to see that the component has been downloaded.
