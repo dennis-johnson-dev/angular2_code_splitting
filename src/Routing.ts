@@ -1,7 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import DefaultComp from './DefaultComp';
+import InlineComp from './InlineComp';
 
 const appRoutes: Routes = [
   {
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    component: DefaultComp
+    component: InlineComp
   }
 ];
 

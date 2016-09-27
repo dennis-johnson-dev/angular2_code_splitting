@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import AppComponent from './AppComponent';
-import DefaultComp from './DefaultComp';
+import InlineComp from './InlineComp';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultComp
+    InlineComp
   ],
   imports: [ BrowserModule, routes ],
   bootstrap: [ AppComponent ]

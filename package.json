@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js",
-    "start": "node server/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +22,7 @@
     "@angular/platform-server": "^2.0.0",
     "@angular/router": "3.0.0",
     "@angular/upgrade": "2.0.0",
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^4.0.0-alpha.4",
     "es6-shim": "^0.35.0",
     "hapi": "^13.3.0",
     "inert": "^3.2.0",
@@ -32,6 +31,10 @@
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
+    "@types/source-map": "^0.1.27",
+    "@types/systemjs": "^0.19.31",
+    "@types/uglify-js": "^2.6.28",
+    "@types/webpack": "^1.12.34",
     "angular2-load-children-loader": "^0.1.2",
     "babel-core": "^6.7.4",
     "babel-loader": "^6.2.4",
