@@ -1,6 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-require('./styles/DynamicSubComp.scss');
+import '../styles/DynamicSubComp.scss';
 
 @Component({
   selector: 'dynamic-sub-comp',

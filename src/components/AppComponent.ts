@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'yo',
   template: `
-    <h1>yo</h1>
+    <h1>Code Splitting in Angular 2</h1>
     <router-outlet></router-outlet>
   `
 })

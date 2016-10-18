@@ -4,6 +4,6 @@ import 'rxjs';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import App from './App';
+import AppModule from './components/AppModule';
 const platform = platformBrowserDynamic();
-platform.bootstrapModule(App);
+platform.bootstrapModule(AppModule);

@@ -8,7 +8,6 @@ const appRoutes: Routes = [
     path: 'dynamic',
     loadChildren: () => {
       return System.import('./DynamicSubComp').then((comp: any) => {
-        console.log('here', comp.default)
         return comp.default;
       });
     }
@@ -18,7 +17,5 @@ const appRoutes: Routes = [
     component: InlineComp
   }
 ];
-
-export const appRoutingProviders: any[] = [];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(appRoutes);

@@ -15,15 +15,11 @@ module.exports = {
     loaders: [
       {
         test: /.ts$/,
-        loader: 'babel!ts-loader!angular2-load-children-loader'
+        loader: 'babel!ts-loader'
       },
       {
-        test: /.scss$/,
+        test: /.css$/,
         loader: 'style!css!sass-loader'
-      },
-      {
-        test: /^s.css$/,
-        loader: 'style!css'
       }
     ]
   }
