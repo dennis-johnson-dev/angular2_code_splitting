@@ -3,7 +3,6 @@
 ### Installation
 ```bash
 npm i
-typings install
 npm run build
 ```
 
@@ -13,7 +12,7 @@ npm run build
 npm start
 ```
 
-Navigate to [http://localhost:3000](http://localhost:3000).
+Navigate to [http://localhost:3011](http://localhost:3011).
 
 Click "Load a dynamic component"
 
