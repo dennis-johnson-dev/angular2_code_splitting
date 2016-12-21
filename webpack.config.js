@@ -15,11 +15,11 @@ module.exports = {
     loaders: [
       {
         test: /.ts$/,
-        loader: 'babel!ts-loader'
+        loader: 'babel-loader!ts-loader'
       },
       {
         test: /.css$/,
-        loader: 'style!css!sass-loader'
+        loader: 'style-loader!css-loader!sass-loader'
       }
     ]
   }

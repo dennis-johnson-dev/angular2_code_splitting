@@ -1,7 +1,7 @@
-import { routes } from './Routing';
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { routes } from './Routing';
 
 import AppComponent from './AppComponent';
 import InlineComp from './InlineComp';
@@ -14,4 +14,4 @@ import InlineComp from './InlineComp';
   imports: [ BrowserModule, routes ],
   bootstrap: [ AppComponent ]
 })
-export default class App {}
+export default class AppModule {}
