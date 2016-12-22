@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 import '../styles/DynamicSubComp.scss';
 
 @Component({

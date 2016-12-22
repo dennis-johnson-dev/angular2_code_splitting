@@ -8,7 +8,7 @@ module.exports = {
     publicPath: '/js/'
   },
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js", ".html"]
   },
   devtool: 'sourcemap',
   module: {
