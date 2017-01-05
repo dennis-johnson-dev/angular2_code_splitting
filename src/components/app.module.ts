@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { routes } from './Routing';
+import { routes } from './app-routing.module';
 
-import AppComponent from './AppComponent';
-import InlineComp from './InlineComp';
+import AppComponent from './app.component';
+import InlineComponent from './inline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InlineComp
+    InlineComponent
   ],
   imports: [ BrowserModule, routes ],
   bootstrap: [ AppComponent ]

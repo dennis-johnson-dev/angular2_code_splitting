@@ -4,5 +4,5 @@ import 'reflect-metadata';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './styles/style.scss';
 
-import AppModule from './components/AppModule';
+import AppModule from './components/app.module';
 platformBrowserDynamic().bootstrapModule(AppModule);
