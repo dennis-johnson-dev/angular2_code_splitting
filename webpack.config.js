@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index',
@@ -22,5 +23,12 @@ module.exports = {
         loader: 'style-loader!css-loader!sass-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'node_modules/babel-polyfill/dist/polyfill.min.js'
+      }
+    ])
+  ]
 };
